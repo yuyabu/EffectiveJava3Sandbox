@@ -1,5 +1,6 @@
 package item32;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Code {
@@ -8,7 +9,9 @@ public class Code {
 	 * Type safety: Potential heap pollution via varargs parameter 
  lists
 	 */
-	String cantUserGenericsAndVarargs(List<String> ... lists) {
+	static String cantUserGenericsAndVarargs(List<String> ... lists) {
+		//List<Object> object = new ArrayList<String>();
+
 		if(lists == null) {
 			return null;
 		}
