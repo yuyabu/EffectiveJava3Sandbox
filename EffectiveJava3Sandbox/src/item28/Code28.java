@@ -1,5 +1,5 @@
 package item28;
 
-public class Code {
+public class Code28 {
 
 }

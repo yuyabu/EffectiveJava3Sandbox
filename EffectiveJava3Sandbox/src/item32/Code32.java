@@ -3,7 +3,7 @@ package item32;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Code {
+public class Code32 {
 	/**
 	 * Java5で追加されたgenericsと可変長引数は同時に使用することができない<br/>
 	 * Type safety: Potential heap pollution via varargs parameter 

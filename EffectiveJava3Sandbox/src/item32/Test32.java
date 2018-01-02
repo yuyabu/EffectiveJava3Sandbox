@@ -5,16 +5,16 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 
-class Test {
+class Test32 {
 
 	@org.junit.jupiter.api.Test
 	void test() {
 		
 		//引数がnullの場合も、複数の場合も実行できてしまう。
-		Code.cantUserGenericsAndVarargs(null);
+		Code32.cantUserGenericsAndVarargs(null);
 		List<String> tempList = List.of("test","32");
 		List<String> tempList2 = List.of("test2","32");
-		Code.cantUserGenericsAndVarargs(tempList,tempList2);
+		Code32.cantUserGenericsAndVarargs(tempList,tempList2);
 		
 		
 		//genericsが不変であるルールがjava9で変わったわけではない。
