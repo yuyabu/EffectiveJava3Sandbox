@@ -23,5 +23,29 @@ public class Code32 {
 		}
 		return null;
 	}
+	/**
+	 * javapで解析用の配列コードのサンプル
+	 */
+	static void sampleOfArray() {
+		int[] intArray = {1,2,3,4};
+		int amount=0;
+		for(int i: intArray) {
+			amount += i;
+		}
+		System.out.println(+amount);//result=10
+		
+	}
+	/**
+	 * javapで解析用のgenericsコードのサンプル
+	 */
+	static void sampleOfGenerics() {
+		List<Integer> intList = List.of(1,2,3,4);
+		int amount =0;
+		for(int i: intList) {
+			amount += i;
+		}
+		System.out.println(amount);//result=10
+		
+	}
 
 }
