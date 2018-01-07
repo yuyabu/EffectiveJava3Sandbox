@@ -9,6 +9,7 @@ public class Code32 {
 	 * Type safety: Potential heap pollution via varargs parameter 
  lists
 	 */
+	@SafeVarargs
 	static String cantUserGenericsAndVarargs(List<String> ... lists) {
 		//List<Object> object = new ArrayList<String>();
 
@@ -46,6 +47,9 @@ public class Code32 {
 		}
 		System.out.println(amount);//result=10
 		
+	}
+	public String instanceMethodCantUserGenericsAndVarargs(List<String> ... lists) {
+		return null;
 	}
 
 }
