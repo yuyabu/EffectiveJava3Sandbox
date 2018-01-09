@@ -45,6 +45,9 @@ class Test1 {
 		flg5.add((Code1.tooBigEnum.No3));//elements[0] = 4
 		flg5.add(Code1.tooBigEnum.No65);// elements[1]= 1
 		
+		Code1.tooBigEnum test1 = Code1.tooBigEnum.No10;
+		
+		
  		System.out.println();
 	}
 	
