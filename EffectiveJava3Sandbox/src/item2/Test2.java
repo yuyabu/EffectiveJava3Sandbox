@@ -15,6 +15,7 @@ class Test2 {
 		//JavaBeansパターン
 		NutritionFacts2 cocaCola2 = new NutritionFacts2();
 		cocaCola2.setServingSize(240);
+		cocaCola2.setServings(8);
 		cocaCola2.setCalories(100);
 		cocaCola2.setSodium(35);
 		cocaCola2.setCarbohydrate(27);
