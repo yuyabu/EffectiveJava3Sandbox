@@ -20,6 +20,9 @@ class Test2 {
 		cocaCola2.setCarbohydrate(27);
 		
 		//builderパターン
+		NutritionFacts3 cocaCola3 = new NutritionFacts3.Builder(240, 8)
+				.calories(100).sodium(35).carbohydrate(27).build();
+		
 		
 		
 	}
