@@ -19,6 +19,8 @@ class Test2 {
 		cocaCola2.setSodium(35);
 		cocaCola2.setCarbohydrate(27);
 		
+		//builderパターン
+		
 		
 	}
 
