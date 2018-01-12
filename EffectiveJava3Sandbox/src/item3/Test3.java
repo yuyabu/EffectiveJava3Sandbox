@@ -12,6 +12,11 @@ class Test3 {
 	void test() {
 		Elvis onlyOneElvis = Elvis.INSTANCE;
 		Paul onlyOnePaul = Paul.getInstance();
+		
+		//TODO:リフレクションを利用した上記２クラスへの攻撃を追記予定
+		
+		//最強のシングルトン。
+		DalisDaughter onlyOneDaughter =  DalisDaughter.INSTANCE;
 	}
 
 }
