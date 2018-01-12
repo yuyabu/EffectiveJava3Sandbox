@@ -11,6 +11,7 @@ class Test3 {
 	@Test
 	void test() {
 		Elvis onlyOneElvis = Elvis.INSTANCE;
+		Paul onlyOnePaul = Paul.getInstance();
 	}
 
 }
