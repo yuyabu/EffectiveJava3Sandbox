@@ -1,4 +1,8 @@
 package item2;
+import static item2.NyPizza.*;
+
+import static item2.NyPizza.Size.*;
+import static item2.Pizza.Topping.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -24,6 +28,11 @@ class Test2 {
 		NutritionFacts3 cocaCola3 = new NutritionFacts3.Builder(240, 8)
 				.calories(100).sodium(35).carbohydrate(27).build();
 		
+		//NyPizza pizza = new NyPizza.Builder(Size.SMALL).addToping(Topping.SAUSAGE).addToping(Topping.ONION).build();
+		//本書のように以下のようにかけない。
+		NyPizza pizza = new NyPizza.Builder(SMALL).addToping(SAUSAGE).addToping(ONION).build();
+		
+		Calzone calzone = new Calzone.Builder().addToping(HAM).sauceInside().build();
 		
 		
 	}
