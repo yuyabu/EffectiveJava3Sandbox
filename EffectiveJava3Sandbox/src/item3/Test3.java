@@ -22,6 +22,11 @@ class Test3 {
 		//最強のシングルトン。
 		System.out.println(fakeElvis == onlyOneElvis);
 		DalisDaughter onlyOneDaughter =  DalisDaughter.INSTANCE;
+		
+		//Constructor<DalisDaughter> cons2 = DalisDaughter.class.getDeclaredConstructor();
+		//コンストラクタが存在しない、という警告が出た。
+		//Java.lang.NoSuchMethodException:item3.DalisDaughter.<init>()
+		
 	}
 
 }
