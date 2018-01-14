@@ -19,8 +19,14 @@ class Test3 {
 		Constructor<Elvis> testConstructor = Elvis.class.getDeclaredConstructor();
 		testConstructor.setAccessible(true);
 		Elvis fakeElvis = testConstructor.newInstance();
-		//最強のシングルトン。
+
+		//faleElvis == onlyOneElvis がfalseとなってしまった
+		//(Elvisインスタンスが2つ存在する世界を作ってしまった)
 		System.out.println(fakeElvis == onlyOneElvis);
+		
+
+		
+		//最強のシングルトン。
 		DalisDaughter onlyOneDaughter =  DalisDaughter.INSTANCE;
 		
 		//Constructor<DalisDaughter> cons2 = DalisDaughter.class.getDeclaredConstructor();
