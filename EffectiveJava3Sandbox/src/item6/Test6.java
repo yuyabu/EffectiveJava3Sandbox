@@ -14,6 +14,8 @@ class Test6 {
 		
 		System.out.println(s1==s2);//false
 		System.out.println(s1 == s3);
+		
+		Boolean.valueOf("true");
 	}
 
 }
