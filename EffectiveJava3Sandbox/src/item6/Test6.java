@@ -16,6 +16,7 @@ class Test6 {
 		System.out.println(s1 == s3);
 		
 		Boolean.valueOf("true");
+		Boolean tes = new Boolean("true");//Boolean Constructor is depecated in Java9.
 	}
 
 }
