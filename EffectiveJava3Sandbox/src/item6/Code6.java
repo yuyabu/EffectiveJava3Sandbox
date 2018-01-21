@@ -14,7 +14,7 @@ public class Code6 {
 		return ROMAN.matcher(s).matches();
 		//この書き方はパフォーマンス改善になるが、メソッドが呼ばれない場合にも
 		//Staticメンバのインスタンスが不用意に生成されてしまう。
-		//遅延初期化(azy initialization)で抑制することができるが
+		//遅延初期化(lazy initialization)で抑制することができるが
 		//遅延初期化は実装を複雑にする割に、あまりパフォーマンスを改善しないので非推奨。
 	}
 
