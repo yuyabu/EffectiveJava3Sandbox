@@ -28,10 +28,18 @@ class Test26 {
 		//stamps2.add(new Coin(5));//コンパイル時にエラー発見可能！
 		
 		List rowList = new ArrayList();
-		rowList.add(new ArrayList<String>());
+		List<String> genericList = new ArrayList<>();
 		
-		List<String> genericList = new ArrayList<String>();
-		//genericList.add(new ArrayList<String>()); エラーになる！知らなかった。
+		sampleFunc(rowList);//List<String>はListのサブタイプである
+		//sampleFunc2(genericList);List<String>はList<Object>のサブタイプではない
+		
+		System.out.println();
+	}
+	void sampleFunc(List list) {
+		
+	}
+	void sampleFunc2(List<Object> list) {
+		
 	}
 
 }
