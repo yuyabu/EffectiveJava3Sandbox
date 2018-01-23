@@ -17,13 +17,21 @@ public class Code6 {
 		//遅延初期化(lazy initialization)で抑制することができるが
 		//遅延初期化は実装を複雑にする割に、あまりパフォーマンスを改善しないので非推奨。
 	}
-	
+	/**
+	 * テストしてみたところこちらには6秒もかかった。
+	 * これはauto boxing時に不要なインスタンスを2^31個も作ってしまうから
+	 * @return
+	 */
 	static long sumBadPerformance() {
 		Long sum = 0L;
 		for(long i = 0;i <= Integer.MAX_VALUE;i++)
 			sum +=1;
 		return sum;
 	}
+	/**
+	 * テストしてみたところ、こちらには約0.６秒かかった
+	 * @return
+	 */
 	static long sumGoodPerformance() {
 		long sum = 0L;
 		for(long i = 0;i <= Integer.MAX_VALUE;i++)
