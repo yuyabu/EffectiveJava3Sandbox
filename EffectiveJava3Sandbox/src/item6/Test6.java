@@ -33,6 +33,10 @@ class Test6 {
 		Set<String> setView2 = map.keySet();
 		
 		System.out.println(setView == setView2);//true
+		//setView.add("test");//UnsupportedOperationException
+		//実装はHashMapクラスのインナークラスのインスタンスが帰ってくる
+		//AbstructCollectionのaddがオーバーライドされていないので実行できない。
+		System.out.println("end");
 		
 
 	}
