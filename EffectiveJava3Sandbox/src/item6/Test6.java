@@ -36,6 +36,7 @@ class Test6 {
 		//setView.add("test");//UnsupportedOperationException
 		//実装はHashMapクラスのインナークラスのインスタンスが帰ってくる
 		//AbstructCollectionのaddがオーバーライドされていないので実行できない。
+		//view objectというらしい。
 		System.out.println("end");
 		
 
