@@ -18,11 +18,18 @@ public class Code6 {
 		//遅延初期化は実装を複雑にする割に、あまりパフォーマンスを改善しないので非推奨。
 	}
 	
-	private static long sumBadPerformance() {
+	static long sumBadPerformance() {
 		Long sum = 0L;
 		for(long i = 0;i <= Integer.MAX_VALUE;i++)
 			sum +=1;
 		return sum;
 	}
+	static long sumGoodPerformance() {
+		long sum = 0L;
+		for(long i = 0;i <= Integer.MAX_VALUE;i++)
+			sum +=1;
+		return sum;
+	}
+	
 
 }
