@@ -39,6 +39,21 @@ class Test6 {
 		//view objectというらしい。
 		System.out.println("end");
 		
+		//autoBoxinがパフォマンスを下げる例。
+		Long start,end;
+		start = System.nanoTime();
+		Code6.sumBadPerformance();
+		end= System.nanoTime();
+		System.out.println("Time:" + (end - start)/1000000f + "ms");
+		
+		start = System.nanoTime();
+		Code6.sumGoodPerformance();
+		end= System.nanoTime();
+		System.out.println("Time:" + (end - start)/1000000f + "ms");
+		
+		//Time:6964.7607ms
+		//Time: 660.76697ms
+		//約１0倍近く違う。
 		
 	}
 
