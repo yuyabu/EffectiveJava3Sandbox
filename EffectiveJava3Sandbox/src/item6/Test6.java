@@ -39,7 +39,7 @@ class Test6 {
 		//view objectというらしい。
 		System.out.println("end");
 		
-
+		
 	}
 
 }
