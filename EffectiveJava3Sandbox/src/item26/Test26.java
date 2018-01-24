@@ -3,7 +3,9 @@ package item26;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.junit.jupiter.api.Test;
 
@@ -32,6 +34,15 @@ class Test26 {
 		
 		sampleFunc(rowList);//List<String>はListのサブタイプである
 		//sampleFunc2(genericList);List<String>はList<Object>のサブタイプではない
+		
+		//協会ワイルドカードがパラメータ化されたSetインスタンスにはnull以外の要素を挿入できない。
+		Set<?> set = new HashSet<>();
+		//set.add(new Object());下記のエラーが発生する
+		//The method add(capture#1-of ?) in the type Set<capture#1-of ?> is not applicable for the arguments (Object)
+		
+		//nullは挿入できるらしい。
+		set.add(null);
+		
 		
 		System.out.println();
 	}
