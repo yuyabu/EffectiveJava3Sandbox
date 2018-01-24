@@ -43,6 +43,9 @@ class Test26 {
 		//nullは挿入できるらしい。
 		set.add(null);
 		
+		//genericはクラスリテラルに使えない。
+		Class c1 =  List.class;
+		//Class c2 =  List<String>.class;ilegal
 		
 		System.out.println();
 	}
