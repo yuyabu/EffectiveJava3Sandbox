@@ -48,6 +48,14 @@ class Test26 {
 		//Class c2 =  List<String>.class;ilegal
 		
 		System.out.println();
+		
+		//パラメータ化された型にはinstanceOfが使えない
+		List<String> testString= new ArrayList<>();
+		//if (testString instanceof List<String>) {}//エラー
+		//Cannot perform instanceof check against parameterized type 
+		// List<String>. Use the form List<?> instead since further 
+		//generic type information will be erased at runtime
+		
 	}
 	void sampleFunc(List list) {
 		

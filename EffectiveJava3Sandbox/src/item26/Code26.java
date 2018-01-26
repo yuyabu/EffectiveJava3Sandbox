@@ -21,6 +21,7 @@ public class Code26 {
 	}
 	/**
 	 * 非境界ワイルドカード(unbounded wild card)を使った例。原型(row type)よりこちらを使うべき。
+	 * genericsを使いたいが、型がわからない場合は?を使える。
 	 * @param s1
 	 * @param s2
 	 * @return
