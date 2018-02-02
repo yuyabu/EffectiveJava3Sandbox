@@ -13,4 +13,9 @@ public class Code27 {
 	// conversion to conform to Set<String>
 	//- HashSet is a raw type. References to generic type HashSet<E> should 
 	// be parameterized
+	
+	//diamond operator(<>)により警告を消す
+	{
+		Set<String> exaltation = new HashSet<>();
+	}
 }
