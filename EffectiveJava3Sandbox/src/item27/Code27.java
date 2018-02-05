@@ -16,6 +16,24 @@ public class Code27 {
 	
 	//diamond operator(<>)により警告を消す
 	{
+		Set<String> exaltation = new HashSet();
+	}
+		
+	//diamond operator(<>)により警告を消す
+	{
 		Set<String> exaltation = new HashSet<>();
 	}
+	
+	//警告：Type safety: Unchecked cast from Object to T
+	public <T> T sample1(T a,Object b) {
+		return (T) b;	
+	}
+	@SuppressWarnings("unchecked")
+	public <T> T sample2(T a,Object b) {
+		return (T) b;
+		
+	}
+			
+	
+
 }
