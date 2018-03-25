@@ -1,5 +1,6 @@
 package item27;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -32,6 +33,24 @@ public class Code27 {
 	public <T> T sample2(T a,Object b) {
 		return (T) b;
 		
+	}
+	
+	//adding local vairiavble to reduce scope of @SuppressWarnings
+	public <T> T[] toArray(T[] a, T[] elements) {
+		int size = 5;
+		if(a.length < size) {
+			//this cast is correct beacuse the array we're createing 
+			//is of the same type as the one passded in,which is T[]
+			@SuppressWarnings("unchecked") T[] result = 
+					(T[]) Arrays.copyOf(elements,size,a.getClass());
+			return result;
+		}
+		System.arraycopy(elements, 0, a, 0, size);;
+		if(a.length > size)
+			a[size] = null;
+		return a;
+	
+	
 	}
 			
 	
