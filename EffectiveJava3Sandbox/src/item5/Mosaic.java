@@ -4,7 +4,7 @@ import java.util.function.Supplier;
 
 public class Mosaic {
 	
-	Mosaic create(Supplier<? extends Tile> tileFactory) {
+	static Mosaic create(Supplier<? extends Tile> tileFactory) {
 		return new Mosaic(tileFactory.get());
 	}
 	Mosaic(){}
@@ -14,7 +14,6 @@ public class Mosaic {
 	private Tile tile;
 	
 	public String asText() {
-		return null;
-		//return "this is "+tile.+""
+		return "this is "+tile.getColor()+" color mosaic";
 	}
 }
