@@ -35,4 +35,22 @@ public class Code9 {
 			in.close();
 		}
 	}
+	//try-with-resources - the the best way to close resources!
+	static String firstLineOfFile2(String path) throws IOException{
+		try(BufferedReader br = new BufferedReader(
+				new FileReader(path))){
+			return br.readLine();
+		}
+	}
+	
+	static void copy2(String src,String dst) throws IOException{
+		try(InputStream in = new FileInputStream(src);
+				OutputStream out = new FileOutputStream(dst)){
+			byte[] buf = new byte[BUFFER_SIZE];
+			int n;
+			while((n = in.read(buf))>=0)
+				out.write(buf,0,n);
+
+		}
+	}
 }
