@@ -31,6 +31,13 @@ class Test10 {
 		System.out.println(p2.equals(p3));//true
 		System.out.println(p1.equals(p3));//false
 	
+		CounterPoint cp = new CounterPoint(0,1);
+		CounterPoint cp2 = new CounterPoint(0,1);
+		
+		System.out.println(cp.numberCreated());
+		System.out.println(cp2.numberCreated());
+		
+		
 	}
 
 }
