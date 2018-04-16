@@ -7,15 +7,31 @@ public class Point {
 		this.x = x;
 		this.y = y;
 	}
-	@Override
-	public boolean equals(Object o) {
-		if(!(o instanceof Point)){
+//	@Override
+//	public boolean equals(Object o) {
+//		if(!(o instanceof Point)){
+//			return false;
+//		}
+//		Point p = (Point)o;
+//		return p.x == x && p.y == y;
+//		
+//		
+//	}
+//	
+	//不完全 - リスコフの置換原則を破っている
+	@Override public boolean equals(Object o) {
+		if(o == null || o.getClass() != getClass())
 			return false;
-		}
-		Point p = (Point)o;
-		return p.x == x && p.y == y;
-		
+		Point p = (Point) o;
+		return p.getX() == getX() && p.getY() == getY();
 		
 	}
+	public int getX() {
+		return x;
+	}
+	public int getY() {
+		return y;
+	}
+	
 
 }

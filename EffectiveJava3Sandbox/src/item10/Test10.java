@@ -19,7 +19,18 @@ class Test10 {
 		
 		List<CaseInsensitiveString> list = new ArrayList<>();
 		list.add(cis);
+		//対象律を破っていると以下のコードの振る舞いが保証できない
 		System.out.println(list.contains(s));//false
+		
+		
+		//推移律に違反
+		ColorPoint p1 = new ColorPoint(1,2,Color.RED);
+		Point p2 = new Point(1,2);
+		ColorPoint p3 = new ColorPoint(1,2,Color.BLUE);
+		System.out.println(p1.equals(p2));//true
+		System.out.println(p2.equals(p3));//true
+		System.out.println(p1.equals(p3));//false
+	
 	}
 
 }
