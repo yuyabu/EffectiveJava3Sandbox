@@ -1,5 +1,6 @@
 package item10;
 
+import item10.code2.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
@@ -34,10 +35,19 @@ class Test10 {
 		CounterPoint cp = new CounterPoint(0,1);
 		CounterPoint cp2 = new CounterPoint(0,1);
 		
-		System.out.println(cp.numberCreated());
-		System.out.println(cp2.numberCreated());
+		System.out.println(cp.numberCreated());//2
+		System.out.println(cp2.numberCreated());//2
 		
+		System.out.println(Code10.onUnitCircle(cp));//false
 		
+		p2 = new Point(0,1);
+		
+		System.out.println(p2.equals(cp));
+		System.out.println(cp.equals(p2));
+		
+		item10.code2.ColorPoint cp3 = new item10.code2.ColorPoint(0,1,Color.RED);
+		//スーパークラスと比較するときはクラス自身ではなく保持しているスーパークラスのインスタンスと比較する
+		System.out.println(p2.equals(cp3.asPoint()));//true
 	}
 
 }

@@ -32,6 +32,9 @@ public class Point {
 	public int getY() {
 		return y;
 	}
+	public String toString() {
+		return new StringBuilder("x=").append(x).append(":y=").append(y).toString();
+	}
 	
 
 }
